@@ -136,7 +136,7 @@ public class UnigramWordPredictor implements WordPredictor {
     List<String> list = neighborMap.get(context.getLast());
    
     // Return a random word that could follow in regards to context
-    return list.get((int)(Math.random() * (list.size() - 1)));
+    return list.get((int)(Math.random() * (list.size())));
   }
   
   /**
